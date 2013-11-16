@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  food: MyString
+  lifedate: MyString
+  fridge: MyString
+  freezer: MyString
+
+two:
+  food: MyString
+  lifedate: MyString
+  fridge: MyString
+  freezer: MyString

@@ -1,0 +1,33 @@
+<h1>Listing expires</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Food</th>
+      <th>Lifedate</th>
+      <th>Fridge</th>
+      <th>Freezer</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @expires.each do |expire| %>
+      <tr>
+        <td><%= expire.food %></td>
+        <td><%= expire.lifedate %></td>
+        <td><%= expire.fridge %></td>
+        <td><%= expire.freezer %></td>
+        <td><%= link_to 'Show', expire %></td>
+        <td><%= link_to 'Edit', edit_expire_path(expire) %></td>
+        <td><%= link_to 'Destroy', expire, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Expire', new_expire_path %>

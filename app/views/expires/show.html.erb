@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Food:</strong>
+  <%= @expire.food %>
+</p>
+
+<p>
+  <strong>Lifedate:</strong>
+  <%= @expire.lifedate %>
+</p>
+
+<p>
+  <strong>Fridge:</strong>
+  <%= @expire.fridge %>
+</p>
+
+<p>
+  <strong>Freezer:</strong>
+  <%= @expire.freezer %>
+</p>
+
+<%= link_to 'Edit', edit_expire_path(@expire) %> |
+<%= link_to 'Back', expires_path %>

@@ -1,0 +1,33 @@
+<%= form_for(@expire) do |f| %>
+  <% if @expire.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@expire.errors.count, "error") %> prohibited this expire from being saved:</h2>
+
+      <ul>
+      <% @expire.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :food %><br>
+    <%= f.text_field :food %>
+  </div>
+  <div class="field">
+    <%= f.label :lifedate %><br>
+    <%= f.text_field :lifedate %>
+  </div>
+  <div class="field">
+    <%= f.label :fridge %><br>
+    <%= f.text_field :fridge %>
+  </div>
+  <div class="field">
+    <%= f.label :freezer %><br>
+    <%= f.text_field :freezer %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
