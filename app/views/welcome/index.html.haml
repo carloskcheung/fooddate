@@ -1,0 +1,93 @@
+.splash
+  .inner
+    .container
+      .row
+        .col-md-8
+          .logo
+            = image_tag '#'
+          %h1 
+            Understand The Shelf Life
+            %br
+            More Food!
+          %h2 
+            Edibly is a Mobile Application for iOS
+            %br
+            Be a Leader &amp; Scan Your Food
+            %br
+            Text "Food" to (415) 515-1063
+          %p= link_to(image_tag('appicon.png'), 'https://itunes.apple.com/us/app/hat-trick-daily-sports-trivia/id722427984?ls=1&mt=8')
+
+        .col-md-4
+          = image_tag 'splash.png'
+.section
+  .container
+    %h1 Featured
+    .row
+      .col-md-4
+        %p= image_tag '#', class: 'img-thumbnail featured-logo'
+        %h2 NPR Radio 
+        %p Our team member was featured on NPR radio
+        %p= image_tag '#', class: 'img-responsive'
+      .col-md-4
+        %p= image_tag '#', class: 'img-thumbnail featured-logo'
+        %h2 Food Blog
+        %p 
+          Ahna was recently interviewed by the a food blog about our app and the Food Hackathon. 
+        %p= link_to "Visit Food Blog and read the interview", "http://www.huffingtonpost.com/food/"
+
+      .col-md-4
+        %p= image_tag '#', class: 'img-thumbnail featured-logo'
+        %h2 FoodHackathon Participants
+        %p 
+          We're proud to launch in this year's 
+          = link_to 'Future Food hackathon.', 'http://www.futurefoodtech.com/hackathon/'
+          After participating in the San Francisco event, we'll be launching in late December 
+          = link_to 'Twitter', 'http://www.twtter.com/carloskcheung' 
+        %p= image_tag '#', class: 'img img-responsive'
+
+
+.section.green-section
+  .container
+    .row 
+      .col-md-4
+        %h2 Scan Your Food
+        %p= image_tag '#', class: 'img-thumbnail'
+        %p Get a better knowledge of your food with a click of a button
+      .col-md-4
+        %h2 Match Our Database
+        %p= image_tag '#', class: 'img-thumbnail'
+        %p Our database will match the scan with the right food
+      .col-md-4
+        %h2 Make Smart Decisions
+        %p= image_tag '#', class: 'img-thumbnail'
+        %p Know what to do with your current shelf food and eliminate waste 
+
+        
+
+.section
+  .container
+    %h1 Sample Datasets
+
+    .row
+      .col-md-6
+        %h2 Always Up to Date
+        %p 
+          We've got data from this weekend's API powered by 
+          = link_to 'Mashery', 'http://www.mashery.com/customers/foodessentials'
+        .jumbotron
+          %h3 UPC match up
+           %ul
+             %li UPC
+             %li UPC
+             %li UPC
+             %li UPC
+      .col-md-6
+        %h2 Tons of Data
+        %p A database full of informative dates
+        .jumbotron
+          %h3 Real Expiration & Alternative Look up
+           %ul
+             %li Freeze By
+             %li Donate By
+             %li Expire By
+             %li Compost By
