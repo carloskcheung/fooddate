@@ -1,11 +1,15 @@
 Fooddate::Application.routes.draw do
-  resources :expires
+  resources :expire
+
   root to: 'expires#index'
   get 'about' => 'expires#about'
   get 'contact' => 'expires#contact'
   get 'news' => 'expires#news'
   get 'welcome' => 'welcome#index'
   get 'dates' => 'welcome#dates'
+
+  #get 'product' => 'products#new'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
