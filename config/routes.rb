@@ -1,7 +1,9 @@
 Fooddate::Application.routes.draw do
+  resources :expires
   resources :expire
-
-  root to: 'expires#index'
+  
+  root to: 'welcome#index'
+  get 'data' => 'expires#index'
   get 'about' => 'expires#about'
   get 'contact' => 'expires#contact'
   get 'news' => 'expires#news'
